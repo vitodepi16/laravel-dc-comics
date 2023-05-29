@@ -5,14 +5,14 @@
 
         <div class="container">
             <div class="row ">
-                @foreach ($products as $product)
+                @foreach ($comics as $comic)
                     <div class="col-12 col-sm-6 col-md-4 col-lg-3  d-flex p-3 mb-4 mt-4">
                         <a class="card" href="{{ route('comic', ['id' => $loop->index]) }}">
                             <div class="card-img-top">
                                 <img class="img-fluid h-100" src="{{ $product['thumb'] }}" alt="">
                             </div>
                             <div class="card-body">
-                                <h4 class="p-4 mb-4 text-white">{{ $product['title'] }}</h4>
+                                <h4 class="p-4 mb-4 text-white">{{ $comic['title'] }}</h4>
                             </div>
                         </a>
 
