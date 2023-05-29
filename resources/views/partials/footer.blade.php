@@ -1,10 +1,10 @@
 <footer>
     <div class="row m-0">
-        @foreach ($footerLinks as $fLink)
+        @foreach ($data as $fLink)
             <div class="col p-0">
                 <ul class="d-flex flex-column p-0  align-items-center h-100">
 
-                    <h5 class="p-3 text-uppercase text-white">{{ $fLink['title'] }}</h5> --}}
+                    <h5 class="p-3 text-uppercase text-white">{{ $fLink['title'] }}</h5>
                     @foreach ($fLink['links'] as $link)
                         <li class="d-flex  pb-2">
                             <a href="/">{{ $link['text'] }}</a>
@@ -17,9 +17,7 @@
     </div>
 </footer>
 <style lang="scss" scoped>
-    footer {
-        background-image: url('images/footer-bg.jpg')
-    }
+    footer {}
 
     li {
         list-style: none;

@@ -14,7 +14,9 @@ class ComicController extends Controller
      */
     public function index()
     {
-        //
+        $comics = Comic::all();
+        $data = config('db_comics.footerLinks');
+        return view('comics.index', compact('comics', 'data'));
     }
 
     /**
@@ -24,7 +26,8 @@ class ComicController extends Controller
      */
     public function create()
     {
-        //
+        $data = config('db_comics.footerLinks');
+        return view('comics.create', compact('data'));
     }
 
     /**
@@ -46,7 +49,8 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)
     {
-        //
+        $data = config('db_comics.footerLinks');
+        return view('comics.show', compact('comic', 'data'));
     }
 
     /**
