@@ -4,7 +4,7 @@
         <div class="row">
             <div class="col d-flex justify-content-between p-3">
                 <a class="logo" href="{{ route('home') }}">
-                    <img src="/images/dc-logo.png" alt="logo">
+                    <img src="/image/dc-logo.png" alt="logo">
                 </a>
                 <div>
                     <ul class="d-flex justify-center align-items-center h-100 ">
