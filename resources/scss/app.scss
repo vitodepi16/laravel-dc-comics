@@ -10,3 +10,7 @@ $fa-font-path: "../fonts/webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+    footer {
+        background-image: url('/image/footer-bg.jpg')
+    }

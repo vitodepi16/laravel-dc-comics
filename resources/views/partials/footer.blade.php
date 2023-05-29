@@ -17,10 +17,6 @@
     </div>
 </footer>
 <style lang="scss" scoped>
-    footer {
-        background-image: url('image/footer-bg.jpg')
-    }
-
     li {
         list-style: none;
 
