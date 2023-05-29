@@ -4,7 +4,7 @@
     <main>
 
         <div class="container">
-            <a href=" {{ route('comics.create') }}" class="btn btn-primary justify-content-center ">
+            <a href=" {{ route('comics.create') }}" class="btn btn-primary  justify-content-center ">
                 Crea il tuo fumetto
             </a>
             <div class="row ">
@@ -18,8 +18,6 @@
                                 <h4 class="p-4 mb-4 text-white">{{ $comic['title'] }}</h4>
                             </div>
                         </a>
-
-
                     </div>
                 @endforeach
             </div>
