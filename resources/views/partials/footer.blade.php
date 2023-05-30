@@ -16,13 +16,3 @@
         @endforeach
     </div>
 </footer>
-<style lang="scss" scoped>
-    li {
-        list-style: none;
-
-    }
-
-    a {
-        text-decoration: none;
-    }
-</style>

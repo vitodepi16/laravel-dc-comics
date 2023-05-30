@@ -19,16 +19,3 @@
         </div>
     </div>
 </header>
-
-<style lang="scss" scoped>
-    .head-link {
-        text-decoration: none;
-
-        &:hover {
-            cursor: pointer;
-            color: blue;
-            border-bottom: blue solid 1px;
-        }
-
-    }
-</style>
