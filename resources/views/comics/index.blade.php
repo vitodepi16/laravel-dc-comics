@@ -8,7 +8,7 @@
             </div>
         @endif
         <div class="container">
-            <a href=" {{ route('comics.create') }}" class="btn btn-primary  justify-content-center ">
+            <a href=" {{ route('comics.create') }}" class="btn btn-outline-primary mt-4 ">
                 Crea il tuo fumetto
             </a>
             <div class="row ">
@@ -22,12 +22,12 @@
                                 <div class="card-body">
                                     <h4 class="p-4 mb-4 text-white">{{ $comic['title'] }}</h4>
                                     <a href="{{ route('comics.edit', $comic->id) }}"
-                                        class="btn btn-warning  btn-sm">Modifica il
+                                        class="btn btn-outline-warning btn-sm">Modifica il
                                         fumetto</a>
                                     <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                                         @csrf
                                         @method('DELETE')
-                                        <button class="btn btn-danger btn-sm delete-button">Elimina il
+                                        <button class="btn btn-outline-danger btn-sm mt-3 delete-button">Elimina il
                                             fumetto</button>
                                     </form>
 
