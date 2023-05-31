@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Comic;
+use app\Http\Requests\StoreComicRequest;
 use Illuminate\Http\Request;
 
 class ComicController extends Controller
@@ -84,7 +85,7 @@ class ComicController extends Controller
      * @param  \App\Models\Comic  $comic
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Comic $comic)
+    public function update(StoreComicRequest $request, Comic $comic)
     {
         $validatedData = $request->validate([
             'title' => ['required', 'max:255', 'min:2'],
