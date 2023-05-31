@@ -27,4 +27,10 @@ class StoreComicRequest extends FormRequest
             //
         ];
     }
+    public function messages()
+    {
+        return [
+            'title.required' => 'Inserisci il titolo'
+        ];
+    }
 }
